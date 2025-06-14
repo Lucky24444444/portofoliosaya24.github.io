@@ -75,7 +75,7 @@ body.dark .theme-toggle {
 }
 
 main {
-  padding: 9rem 0 4rem; /* Diperbesar dari 6rem menjadi 9rem agar tidak tertutup header */
+  padding: 9rem 0 4rem; /* Diperbesar agar tidak tertutup header */
 }
 
 #about {
@@ -87,11 +87,15 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
 }
 
 .profile-pic {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 100px;
+  border: 2px solid var(--accent); /* Tambahan opsional agar terlihat lebih menarik */
 }
 
 .skill-bars {
